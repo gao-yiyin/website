@@ -1,0 +1,153 @@
+body {
+    background: grey;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADERER */
+header {
+    background: black;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+    /* margin: 20px 40px 10px 50px; */
+    /* margin 增加外边距 四个值：上右下左 */
+    /* padding: 5px;   增加内边距 */
+    background-image: url('https://img.zcool.cn/community/0196665bee0b09a8012092523df32c.jpg@1280w_1l_0o_100sh.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+header .mobile {
+    display: none;
+}
+
+header .logo a {
+    /* background: color image repeat width */
+    background-image: url('images/logo.png');
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    text-indent: -999999px;  /* 将字体移到其他位置 */
+    top: -35px;
+    height: 80px;
+
+}
+
+nav ul {
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;  /* 去掉无序列表前的小黑点 */
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 740px) {
+    header {
+        height: 250px;
+        background-position: 0 -400px;
+    }
+    header .mobile {
+        display: inline-block;
+    }
+
+    header .desktop {
+        display: none;
+    }
+}
+
+/* FEATURES */
+.features {
+    background-color: white;
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  /* 自动换行显示 */
+}
+
+.features figure {
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    text-transform: uppercase;  /* 字体大写 */
+}
+
+.features figure img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    box-shadow: gray 0 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    background: white;
+    color: grey;
+    padding: 20px;
+    display: flex;  /* 弹性布局 */
+    flex-direction: row;  /* row-reverse: 行反向排列*/
+}
+
+div {
+    background: pink;
+    /* display: inline-block;  display设置为inline之后，div的宽度有其内容决定;设置为inline-block可固定其宽度和高度 */
+    margin: auto;
+    width: 100px;
+}
+
+/*
+ RESPONSIVE RULES 
+@media screen and (max-width: 740px) {
+    .features {
+        display: block;
+    }
+}
+*/
+
+/* FOOTER */
+footer {
+    background: black;
+    color: gray;
+    font-size: 15px;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+/* @media screen and (min-width:683px) {
+    .features {
+        background-color: pink;
+
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .features {
+        background-color: red;
+
+    }
+} */

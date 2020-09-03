@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站框架</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section div, a {
+            color: khaki;
+        }
+
+        .feature-box div {
+            margin: 5px;
+            width: 100%;
+        }
+
+        .feature-box {
+            background: grey;
+        }
+
+        .sales {
+            background: white;
+        }
+
+        #frank {
+            font-size: 120%;
+        }
+
+        /* 伪类：不是真的类，用来添加一些选择器的特殊效果 */
+        /* 在目标元素和伪类之间有: */
+        li:first-child {
+            background: lightcoral;
+        }
+        
+        li:hover {
+            background: lightcyan;
+        }
+
+        /* active:点击之后产生的效果 */
+        a:active {
+            text-decoration: none;
+        }
+
+        /* 鼠标放在目标位置上产生的效果 */
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/locations.html">Locations</a></li>
+                <li><a href="/index.html">Bakery Logo</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/directions.html">Directions</a></li>
+            </ul>
+        </nav>
+        <h1>Directions</h1>
+    </header>
+    <!-- id是唯一标识，不能用在其他地方 -->
+    <section id="frank" class="feature-box sales">
+        <div>Section a</div>
+        <div>Section b</div>
+        <div>Section c</div>
+    </section>
+    <section class="feature-box closeouts">
+        <div>Section d</div>
+        <div>Section e</div>
+    </section>
+    <footer>footer</footer>
+</body>
+</html>
